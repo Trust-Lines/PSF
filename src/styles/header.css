@@ -7,8 +7,8 @@
   position: absolute; top: 0; height: 100%;
   background-repeat: no-repeat;
   background-image:
-    url('../assets/header-stroke.svg'),
-    url('../assets/header-fill.svg');
+    url('/assets/header-stroke.svg'),
+    url('/assets/header-fill.svg');
   background-size:
     calc(1593.79px * var(--s)) calc(123.932px * var(--s)),
     calc(1592px * var(--s)) calc(122.433px * var(--s));

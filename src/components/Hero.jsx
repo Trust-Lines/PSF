@@ -1,6 +1,6 @@
 import '../styles/hero.css';
-import bg from '../assets/hero-bg.png';
-import fox from '../assets/fox.png';
+const bg = '/assets/hero-bg.png';
+const fox = '/assets/fox.png';
 
 export default function Hero() {
   return (

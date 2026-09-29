@@ -1,15 +1,15 @@
 import '../styles/footer.css';
-import logo from '../assets/logo-footer.png';
-import arrowLoc from '../assets/arrow-location.svg';
-import arrowSubmit from '../assets/arrow-submit.svg';
-import instagram from '../assets/social-instagram.svg';
-import youtube from '../assets/social-youtube.svg';
-import linkedin from '../assets/social-linkedin.svg';
-import smA from '../assets/sm-a.svg';
-import smB from '../assets/sm-b.svg';
-import smC from '../assets/sm-c.svg';
-import brandPremium from '../assets/brand-premium.svg';
-import brandDesign from '../assets/brand-design.svg';
+const logo = '/assets/logo-footer.png';
+const arrowLoc = '/assets/arrow-location.svg';
+const arrowSubmit = '/assets/arrow-submit.svg';
+const instagram = '/assets/social-instagram.svg';
+const youtube = '/assets/social-youtube.svg';
+const linkedin = '/assets/social-linkedin.svg';
+const smA = '/assets/sm-a.svg';
+const smB = '/assets/sm-b.svg';
+const smC = '/assets/sm-c.svg';
+const brandPremium = '/assets/brand-premium.svg';
+const brandDesign = '/assets/brand-design.svg';
 
 const columns = [
   { title: 'Menu', items: ['Home', 'News', 'About us'] },

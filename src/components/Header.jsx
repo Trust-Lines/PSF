@@ -1,6 +1,6 @@
 import '../styles/header.css';
-import logo from '../assets/logo-header.svg';
-import badge from '../assets/tshop-badge.svg';
+const logo = '/assets/logo-header.svg';
+const badge = '/assets/tshop-badge.svg';
 
 export default function Header() {
   return (
