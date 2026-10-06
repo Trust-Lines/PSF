@@ -1,6 +1,5 @@
 .hero {
   position: relative; width: 100%; overflow: hidden;
-  aspect-ratio: 1592 / 1015;
   display: flex; flex-direction: column; align-items: center;
   padding-top: calc(393 / 1592 * 100%); /* 393px at the 1592px design width */
 }
@@ -17,16 +16,16 @@
   font-weight: 500; font-size: clamp(18px, 2.14vw, 34px); letter-spacing: -0.03em; line-height: 1.2;
 }
 
-/* 465x680 in a 1592 canvas; its bottom third is hidden behind the footer */
+/* 465x680 in a 1592 canvas; whole character stays visible (sits in the flow, not hidden behind the footer) */
 .hero__fox {
-  position: absolute; left: calc(50% - 19.5px); bottom: 0;
+  position: relative; left: calc(-19.5 / 1592 * 100%);
+  margin-top: calc(44 / 1592 * 100%);
   width: calc(465 / 1592 * 100%); aspect-ratio: 465 / 680; height: auto; object-fit: cover;
-  transform: translate(-50%, 32.5%);
 }
 
 @media (max-width: 900px) {
-  .hero { aspect-ratio: auto; min-height: 640px; justify-content: flex-start; padding-top: 110px; }
+  .hero { padding-top: 110px; }
   .hero__title { font-size: clamp(34px, 9vw, 56px); }
   .hero__subtitle { font-size: clamp(16px, 4.4vw, 26px); margin-top: 8px; }
-  .hero__fox { left: 50%; width: clamp(220px, 48vw, 330px); transform: translate(-50%, 18%); }
+  .hero__fox { left: 0; margin-top: 40px; width: clamp(220px, 60vw, 380px); }
 }

@@ -1,32 +1,24 @@
-/* --s scales the curved shape + logo, --k scales the T Shop button */
-.header { --s: 1; --k: 1.4; position: fixed; left: 50%; top: 0; z-index: 50; transform: translateX(-50%); width: 100%; max-width: 1592px; height: calc(123.9px * var(--s)); }
+/* --s scales the bar shape + logo, --k scales the T Shop button */
+.header { --s: 1; --k: 1.4; position: fixed; left: 50%; top: 0; z-index: 50; transform: translateX(-50%); width: 100%; max-width: 1592px; height: calc(110.555px * var(--s)); }
 
-/* Curved shape: fixed-size end caps cut from the Figma vectors, flat middle stretches -> never distorted */
-.header__shape { position: absolute; inset: 0; pointer-events: none; }
+/* Bar (Figma "Union", 1314x110.6 at x=139): fixed-size end caps cut from the vector, flat middle stretches -> never distorted */
+.header__shape { position: absolute; top: 0; left: var(--gutter); right: var(--gutter); height: 100%; pointer-events: none; }
 .header__cap {
   position: absolute; top: 0; height: 100%;
+  background-image: url('/assets/header-bar.svg');
   background-repeat: no-repeat;
-  background-image:
-    url('/assets/header-stroke.svg'),
-    url('/assets/header-fill.svg');
-  background-size:
-    calc(1593.79px * var(--s)) calc(123.932px * var(--s)),
-    calc(1592px * var(--s)) calc(122.433px * var(--s));
+  background-size: calc(1314px * var(--s)) calc(110.555px * var(--s));
 }
-.header__cap--left { left: 0; width: calc(520px * var(--s)); background-position: 0 0, 0 0; }
-.header__cap--right { right: 0; width: calc(124px * var(--s)); background-position: right top, right top; }
-.header__mid {
-  position: absolute; top: 0; left: calc(516px * var(--s)); right: calc(123px * var(--s));
-  height: calc(83.5px * var(--s));
-  background: linear-gradient(to bottom, var(--purple) calc(81.5px * var(--s)), #fff 0);
-}
+.header__cap--left { left: 0; width: calc(106px * var(--s)); background-position: left top; }
+.header__cap--right { right: 0; width: calc(14px * var(--s)); background-position: right top; }
+.header__mid { position: absolute; top: 0; left: calc(105px * var(--s)); right: calc(13px * var(--s)); height: calc(82px * var(--s)); background: var(--purple); }
 
-.header__logo { position: absolute; left: var(--gutter); top: calc(18px * var(--s)); width: calc(271px * var(--s)); }
+.header__logo { position: absolute; left: calc(var(--gutter) + 17px * var(--s)); top: calc(16px * var(--s)); width: calc(239.079px * var(--s)); }
 .header__logo img { width: 100%; height: auto; }
 
 .header__shop {
-  position: absolute; right: var(--gutter);
-  top: calc(40px * var(--s) - 17.7px * var(--k));
+  position: absolute; right: calc(var(--gutter) + 24px * var(--s));
+  top: calc(41px * var(--s) - 17.7px * var(--k));
   width: calc(133.387px * var(--k)); height: calc(35.427px * var(--k));
 }
 .header__shop > img { width: 100%; height: 100%; }
