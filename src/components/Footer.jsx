@@ -24,19 +24,19 @@ export default function Footer() {
         <img className="footer__logo" src={logo} alt="TLines Creativity Group" />
 
         <div className="footer__brands">
-          <div className="brand brand--green">
+          <a className="brand brand--green" href="https://sm.tlines.us" target="_blank" rel="noopener noreferrer" aria-label="T Lines Store Maker">
             <div className="brand__sm">
               <img className="brand__sm-a" src={smA} alt="" />
               <img className="brand__sm-b" src={smB} alt="" />
               <img className="brand__sm-c" src={smC} alt="" />
             </div>
-          </div>
-          <div className="brand">
+          </a>
+          <a className="brand" href="/" aria-label="T Lines Premium Store fitouts">
             <img className="brand__img" src={brandPremium} alt="T Lines Premium Store fitouts" />
-          </div>
-          <div className="brand">
+          </a>
+          <a className="brand" href="https://db.tlines.us/" target="_blank" rel="noopener noreferrer" aria-label="T Lines Design & Build">
             <img className="brand__img" src={brandDesign} alt="T Lines Design & Build" />
-          </div>
+          </a>
         </div>
       </div>
 
