@@ -13,7 +13,7 @@ export default function Header() {
       <a className="header__logo" href="#">
         <img src={logo} alt="T Lines Premium Store fitouts" />
       </a>
-      <a className="header__shop" href="#">
+      <a className="header__shop" href="https://tshop-theta.vercel.app/" target="_blank" rel="noopener noreferrer">
         <img src={badge} alt="" />
         <span className="header__shop-text">
           <b>T Shop</b>
